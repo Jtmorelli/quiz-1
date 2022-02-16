@@ -18,9 +18,6 @@ HINT: Follow the comments for each line to help with the logic of the problem.
 
 
 
-# create a csv object from the file object
-
-
 
 #skip the header row
 
