@@ -36,10 +36,10 @@ class weaponClass:
         self.__bullets = random.randomint(10, 100000)
 
     def status_indicator(self):
-        if self.__bullets >= 1:
-            status = "Active"
+        if self.__bullets <= 1:
+            status = "Inactive"
         else:
-            status = "InActive"
+            status = "Active"
 
         return status
 
