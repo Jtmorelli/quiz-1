@@ -1,6 +1,6 @@
 import random
 
-'''
+"""
 Create a Weapon Class definition according to the following specs:
 
 Attributes:
@@ -21,35 +21,27 @@ firing a bullet. This is accomplished by decreasing the number of bullets by 1
 every time the method is called. When the bullet count reaches zero, it should change
 the attribute 'status' to 'Inactive'
 
-'''
+"""
+
 
 class weaponClass:
-
-
     def __init__(self, name, bullets, speed, wep_range, status):
         self.__name = name
-        self.__bullets = random.randomint(10,100000)
+        self.__bullets = 0
         self.__speed = speed
         self.__weapon_range = wep_range
         self.__status = "Active"
 
+    def bullet_count(self):
+        self.__bullets = random.randomint(10, 100000)
 
     def status_indicator(self):
         if self.__bullets >= 1:
             status = "Active"
         else:
             status = "InActive"
-        
+
         return status
 
-
-    def fire_bullet(self):
-        
-
-
-
-
-
-
-
-   
+    def fire_bullet(self, bullet_fired):
+        self.__bullets -= bullet_fired
