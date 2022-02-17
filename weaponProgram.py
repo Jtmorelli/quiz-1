@@ -57,14 +57,17 @@ for record in weapons_text_file:
 
     # print out the name of the weapon using the appropriate method of the object
 
+    # print("Weapon is a", weapon.get_name())
     print("Weapon is a", name)
 
     # print out the speed of the weapon using the appropriate method of the object
 
+    # print("Weapon speed is", weapon.get_speed())
     print("Weapon speed is", speed)
 
     # print out the range of the weapon using the appropriate method of the object
 
+    # print("Weapon range is", weapon.get_wep_range())
     print("Weapon range is", wep_range)
 
     # print out the number of bullets of the weapon using the appropriate method of the object

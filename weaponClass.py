@@ -49,8 +49,6 @@ class weaponClass:
     def fire_bullet(self):
         self.__bullets -= 1
 
-
-"""
     def get_name(self):
         return self.__name
 
@@ -59,4 +57,3 @@ class weaponClass:
 
     def get_wep_range(self):
         return self.__wep_range
-"""
