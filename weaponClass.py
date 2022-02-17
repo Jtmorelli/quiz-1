@@ -35,8 +35,11 @@ class weaponClass:
     def bullet_count(self):
         self.__bullets = random.randint(10, 100000)
 
+    def get_bullets(self):
+        return self.__bullets
+
     def status_indicator(self):
-        if self.__bullets <= 1:
+        if self.__bullets <= 0:
             status = "Inactive"
         else:
             status = "Active"

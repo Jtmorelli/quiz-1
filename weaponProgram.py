@@ -42,30 +42,31 @@ for record in weapons_text_file:
     # specs from the csv file (name,speed and range)
 
     weapon = w.weaponClass(name, speed, wep_range)
+    weapon.bullet_count()
 
     # append the name and bullet count to 'weapons_dict'
 
     weapons_dict["Name"] = name
 
-    weapons_dict["Bullet count"] = [weapon.bullet_count]
+    weapons_dict["Bullet count"] = [weapon.get_bullets()]
 
     print(weapons_dict)
 
     # print out the name of the weapon using the appropriate method of the object
 
-    print("This weapon is a", name)
+    print("Weapon is a", name)
 
     # print out the speed of the weapon using the appropriate method of the object
 
-    print("weapon speed is", speed)
+    print("Weapon speed is", speed)
 
     # print out the range of the weapon using the appropriate method of the object
 
-    print("weapon range is", wep_range)
+    print("Weapon range is", wep_range)
 
     # print out the number of bullets of the weapon using the appropriate method of the object
 
-    print("this weapon has", weapon.bulletcount, "bullets")
+    print("Weapon has", weapon.get_bullets(), "bullets")
 
     # use an input statement to halt the program and wait for the user -
 
@@ -73,8 +74,10 @@ for record in weapons_text_file:
 
     # use an appropriate loop to keep firing the weapon until all bullets run out
 
-    # if
+    if weapon.get_bullets() > 0:
+        weapon.fire_bullet
 
+    print(weapon.get_bullets())
     # call the appropriate method to fire a bullet
 
     # print out the bullet count every time the weapon is fired
