@@ -46,8 +46,8 @@ class weaponClass:
 
         return status
 
-    def fire_bullet(self, bullet_fired):
-        self.__bullets -= bullet_fired
+    def fire_bullet(self):
+        self.__bullets -= 1
 
 
 """

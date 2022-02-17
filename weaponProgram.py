@@ -75,9 +75,9 @@ for record in weapons_text_file:
     # use an appropriate loop to keep firing the weapon until all bullets run out
 
     if weapon.get_bullets() > 0:
-        weapon.fire_bullet
+        weapon.fire_bullet()
+        print(weapon.get_bullets())
 
-    print(weapon.get_bullets())
     # call the appropriate method to fire a bullet
 
     # print out the bullet count every time the weapon is fired
