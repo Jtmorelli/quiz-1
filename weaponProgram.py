@@ -26,6 +26,8 @@ next(weapons_text_file)
 
 weapons_dict = {}
 
+things = "1"
+
 # outfile = open("weapons_dict.csv", "w")
 
 # use a for loop to iterate through every row of the csv file
@@ -79,6 +81,13 @@ for record in weapons_text_file:
     for count in range(weapon.get_bullets()):
         weapon.fire_bullet()
         print(weapon.get_bullets())
+        weapons_dict["Bullet count"] = [0]
 
+    # using a loop print out the name and number of bullets from the dictionary
 
-# using a loop print out the name and number of bullets from the dictionary
+    for count in things:
+        print(weapons_dict)
+
+    print("                          ")
+    input("Press any key to use another weapon")
+    print("                          ")
