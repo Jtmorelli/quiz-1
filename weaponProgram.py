@@ -73,14 +73,12 @@ for record in weapons_text_file:
     input("Press any key to fire the weapon")
 
     # use an appropriate loop to keep firing the weapon until all bullets run out
+    # call the appropriate method to fire a bullet
+    # print out the bullet count every time the weapon is fired
 
-    if weapon.get_bullets() > 0:
+    for count in range(weapon.get_bullets()):
         weapon.fire_bullet()
         print(weapon.get_bullets())
-
-    # call the appropriate method to fire a bullet
-
-    # print out the bullet count every time the weapon is fired
 
 
 # using a loop print out the name and number of bullets from the dictionary
